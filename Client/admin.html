@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>ReWear | Admin Panel</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/components.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
+</head>
+<body>
+  <body>
+  <header class="site-header">
+    <div class="logo">👕 ReWear</div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="dashboard.html">Dashboard</a>
+      <a href="add-item.html">Add Item</a>
+      <a href="admin.html">Admin</a>
+      <a href="login.html">Logout</a>
+    </nav>
+  </header>
+
+  <!-- Your existing content here -->
+</body>
+
+
+  <div class="admin-panel">
+    <h1>Admin Dashboard</h1>
+    <p class="subtext">Review and moderate submitted items below:</p>
+
+    <div class="admin-items-grid">
+      <!-- Example Item Card -->
+      <div class="admin-card">
+        <img src="assets/images/Floral Dress.webp" alt="Floral Dress">
+        <div class="info">
+          <h3>Floral Dress</h3>
+          <p><strong>Uploader:</strong> Aditi Sharma</p>
+          <p><strong>Status:</strong> Pending</p>
+          <div class="admin-actions">
+            <button class="btn primary">Approve</button>
+            <button class="btn secondary">Reject</button>
+            <button class="btn danger">Delete</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Add more cards dynamically with JS -->
+    </div>
+  </div>
+
+  <script src="js/admin.js"></script>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>ReWear | Admin Panel</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/components.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
+</head>
+<body>
+
+  <div class="admin-container">
+    <h1>Admin Panel</h1>
+    <p>Moderate submitted items below:</p>
+
+    <table class="admin-table">
+      <thead>
+        <tr>
+          <th>Image</th>
+          <th>Title</th>
+          <th>Uploader</th>
+          <th>Status</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody id="adminItemsTable">
+        <!-- JS will populate rows here -->
+      </tbody>
+    </table>
+  </div>
+
+  <script src="data/mock-items.js"></script>
+  <script src="js/admin.js"></script>
+</body>
+</html>

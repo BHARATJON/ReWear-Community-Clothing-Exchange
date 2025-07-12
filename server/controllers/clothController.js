@@ -5,6 +5,7 @@ import soldClothModel from "../models/soldClothModel.js";
 
 // already exists
 const uploadCloth = async (req, res) => {
+    
     try {
         const { type, description, category, size, image } = req.body;
         const userId = req.userId; // From middleware
